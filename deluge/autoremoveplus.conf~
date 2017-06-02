@@ -1,0 +1,23 @@
+{
+  "file": 1, 
+  "format": 1
+}{
+  "interval": 0.5, 
+  "max_seeds": 0, 
+  "sel_func": "and", 
+  "trackers": [], 
+  "remove_data": false, 
+  "labels": [], 
+  "enabled": false, 
+  "count_exempt": false, 
+  "remove": true, 
+  "filter": "func_ratio", 
+  "tracker_rules": {}, 
+  "min": 0.0, 
+  "hdd_space": -1.0, 
+  "filter2": "func_added", 
+  "rule_2_enabled": true, 
+  "min2": 0.0, 
+  "rule_1_enabled": true, 
+  "label_rules": {}
+}
