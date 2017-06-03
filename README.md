@@ -1,4 +1,4 @@
-#media-server
+# media-server
 
 Docker configuration to create Usenet and Torrent downloading system using Sonarr, Radarr, Deluge (over PIA OpenVPN), NZBGet, and Plex
 
