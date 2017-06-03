@@ -10,7 +10,23 @@
   "sidebar_show_zero": false, 
   "pkey": "ssl/daemon.pkey", 
   "https": false, 
-  "sessions": {}, 
+  "sessions": {
+    "d05a60dd878e9c1c61c733044faa8bfb": {
+      "login": "admin", 
+      "expires": 1496451886.0, 
+      "level": 10
+    }, 
+    "e31fec7a9d6de8575eb752732d905647": {
+      "login": "admin", 
+      "expires": 1496450915.0, 
+      "level": 10
+    }, 
+    "976d0bb6033ef3a5e467c6eb1287e137": {
+      "login": "admin", 
+      "expires": 1496452797.0, 
+      "level": 10
+    }
+  }, 
   "base": "/", 
   "interface": "0.0.0.0", 
   "pwd_salt": "c26ab3bbd8b137f99cd83c2c1c0963bcc1a35cad", 
