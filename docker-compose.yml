@@ -42,6 +42,7 @@ services:
     depends_on:
       - nzbget
       - deluge
+      - nginxdeluge
     volumes:
       - /homem/mandreko/sonarr:/config
       - /mnt/TV:/tv
@@ -50,6 +51,7 @@ services:
       - 8989:8989
     links:
       - nzbget
+      - nginxdeluge
     restart: always
     environment:
       - PUID=${PUID}
@@ -61,10 +63,14 @@ services:
     depends_on:
       - nzbget
       - deluge
+      - nginxdeluge
     volumes:
       - /home/mandreko/radarr:/config
       - /home/mandreko/downloads:/downloads
       - /mnt/Movies:/movies
+    links:
+      - nzbget
+      - nginxdeluge
     ports:
       - 7878:7878
     environment:
@@ -80,7 +86,7 @@ services:
     depends_on:
       - vpn
     network_mode: host
-    network_mode: "container:vpn"
+    network_mode: "service:vpn"
     volumes:
       - /home/mandreko/deluge:/config
       - /home/mandreko/downloads:/downloads
@@ -90,9 +96,9 @@ services:
       - PUID=${PUID}
       - PGID=${PGID}
 
-  deluge_nginx:
+  nginxdeluge:
     image: dperson/nginx
-    container_name: nginx_deluge
+    container_name: nginxdeluge
     depends_on:
       - deluge
       - vpn
