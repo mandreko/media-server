@@ -1,0 +1,805 @@
+17-6-1 00:29:30.5|Info|Bootstrap|Starting Radarr - /opt/radarr/Radarr.exe - Version 0.2.0.696
+17-6-1 00:29:31.0|Info|AppFolderInfo|Data directory is being overridden to [/config]
+17-6-1 00:29:33.0|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-1 00:29:33.0|Info|MigrationLogger|*** VersionMigration migrating ***
+17-6-1 00:29:33.1|Info|MigrationLogger|*** VersionUniqueMigration migrating ***
+17-6-1 00:29:33.1|Info|MigrationLogger|*** VersionDescriptionMigration migrating ***
+17-6-1 00:29:33.1|Info|MigrationLogger|*** 1: InitialSetup migrating ***
+17-6-1 00:29:33.1|Info|InitialSetup|Starting migration to 1
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 2: remove_tvrage_imdb_unique_constraint migrating ***
+17-6-1 00:29:33.2|Info|remove_tvrage_imdb_unique_constraint|Starting migration to 2
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 3: remove_renamed_scene_mapping_columns migrating ***
+17-6-1 00:29:33.2|Info|remove_renamed_scene_mapping_columns|Starting migration to 3
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 4: updated_history migrating ***
+17-6-1 00:29:33.2|Info|updated_history|Starting migration to 4
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 5: added_eventtype_to_history migrating ***
+17-6-1 00:29:33.2|Info|added_eventtype_to_history|Starting migration to 5
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 6: add_index_to_log_time migrating ***
+17-6-1 00:29:33.2|Info|add_index_to_log_time|Starting migration to 6
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 7: add_renameEpisodes_to_naming migrating ***
+17-6-1 00:29:33.2|Info|add_renameEpisodes_to_naming|Starting migration to 7
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 8: remove_backlog migrating ***
+17-6-1 00:29:33.2|Info|remove_backlog|Starting migration to 8
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 9: fix_rename_episodes migrating ***
+17-6-1 00:29:33.2|Info|fix_rename_episodes|Starting migration to 9
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 10: add_monitored migrating ***
+17-6-1 00:29:33.2|Info|add_monitored|Starting migration to 10
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 11: remove_ignored migrating ***
+17-6-1 00:29:33.2|Info|remove_ignored|Starting migration to 11
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 12: remove_custom_start_date migrating ***
+17-6-1 00:29:33.2|Info|remove_custom_start_date|Starting migration to 12
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 13: add_air_date_utc migrating ***
+17-6-1 00:29:33.2|Info|add_air_date_utc|Starting migration to 13
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 14: drop_air_date migrating ***
+17-6-1 00:29:33.2|Info|drop_air_date|Starting migration to 14
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 15: add_air_date_as_string migrating ***
+17-6-1 00:29:33.2|Info|add_air_date_as_string|Starting migration to 15
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 16: updated_imported_history_item migrating ***
+17-6-1 00:29:33.2|Info|updated_imported_history_item|Starting migration to 16
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 17: reset_scene_names migrating ***
+17-6-1 00:29:33.2|Info|reset_scene_names|Starting migration to 17
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 18: remove_duplicates migrating ***
+17-6-1 00:29:33.2|Info|remove_duplicates|Starting migration to 18
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 19: restore_unique_constraints migrating ***
+17-6-1 00:29:33.2|Info|restore_unique_constraints|Starting migration to 19
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 20: add_year_and_seasons_to_series migrating ***
+17-6-1 00:29:33.2|Info|add_year_and_seasons_to_series|Starting migration to 20
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 21: drop_seasons_table migrating ***
+17-6-1 00:29:33.2|Info|drop_seasons_table|Starting migration to 21
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 22: move_indexer_to_generic_provider migrating ***
+17-6-1 00:29:33.2|Info|move_indexer_to_generic_provider|Starting migration to 22
+17-6-1 00:29:33.2|Info|MigrationLogger|*** 23: add_config_contract_to_indexers migrating ***
+17-6-1 00:29:33.2|Info|add_config_contract_to_indexers|Starting migration to 23
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 24: drop_tvdb_episodeid migrating ***
+17-6-1 00:29:33.3|Info|drop_tvdb_episodeid|Starting migration to 24
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 25: move_notification_to_generic_provider migrating ***
+17-6-1 00:29:33.3|Info|move_notification_to_generic_provider|Starting migration to 25
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 26: add_config_contract_to_notifications migrating ***
+17-6-1 00:29:33.3|Info|add_config_contract_to_notifications|Starting migration to 26
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 27: fix_omgwtfnzbs migrating ***
+17-6-1 00:29:33.3|Info|fix_omgwtfnzbs|Starting migration to 27
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 28: add_blacklist_table migrating ***
+17-6-1 00:29:33.3|Info|add_blacklist_table|Starting migration to 28
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 29: add_formats_to_naming_config migrating ***
+17-6-1 00:29:33.3|Info|add_formats_to_naming_config|Starting migration to 29
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 30: add_season_folder_format_to_naming_config migrating ***
+17-6-1 00:29:33.3|Info|add_season_folder_format_to_naming_config|Starting migration to 30
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 31: delete_old_naming_config_columns migrating ***
+17-6-1 00:29:33.3|Info|delete_old_naming_config_columns|Starting migration to 31
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 32: set_default_release_group migrating ***
+17-6-1 00:29:33.3|Info|set_default_release_group|Starting migration to 32
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 33: add_api_key_to_pushover migrating ***
+17-6-1 00:29:33.3|Info|add_api_key_to_pushover|Starting migration to 33
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 34: remove_series_contraints migrating ***
+17-6-1 00:29:33.3|Info|remove_series_contraints|Starting migration to 34
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 35: add_series_folder_format_to_naming_config migrating ***
+17-6-1 00:29:33.3|Info|add_series_folder_format_to_naming_config|Starting migration to 35
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 36: update_with_quality_converters migrating ***
+17-6-1 00:29:33.3|Info|update_with_quality_converters|Starting migration to 36
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 37: add_configurable_qualities migrating ***
+17-6-1 00:29:33.3|Info|add_configurable_qualities|Starting migration to 37
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 38: add_on_upgrade_to_notifications migrating ***
+17-6-1 00:29:33.3|Info|add_on_upgrade_to_notifications|Starting migration to 38
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 39: add_metadata_tables migrating ***
+17-6-1 00:29:33.3|Info|add_metadata_tables|Starting migration to 39
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 40: add_metadata_to_episodes_and_series migrating ***
+17-6-1 00:29:33.3|Info|add_metadata_to_episodes_and_series|Starting migration to 40
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 41: fix_xbmc_season_images_metadata migrating ***
+17-6-1 00:29:33.3|Info|fix_xbmc_season_images_metadata|Starting migration to 41
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 42: add_download_clients_table migrating ***
+17-6-1 00:29:33.3|Info|add_download_clients_table|Starting migration to 42
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 43: convert_config_to_download_clients migrating ***
+17-6-1 00:29:33.3|Info|convert_config_to_download_clients|Starting migration to 43
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 44: fix_xbmc_episode_metadata migrating ***
+17-6-1 00:29:33.3|Info|fix_xbmc_episode_metadata|Starting migration to 44
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 45: add_indexes migrating ***
+17-6-1 00:29:33.3|Info|add_indexes|Starting migration to 45
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 46: fix_nzb_su_url migrating ***
+17-6-1 00:29:33.3|Info|fix_nzb_su_url|Starting migration to 46
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 47: add_temporary_blacklist_columns migrating ***
+17-6-1 00:29:33.3|Info|add_temporary_blacklist_columns|Starting migration to 47
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 48: add_title_to_scenemappings migrating ***
+17-6-1 00:29:33.3|Info|add_title_to_scenemappings|Starting migration to 48
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 49: fix_dognzb_url migrating ***
+17-6-1 00:29:33.3|Info|fix_dognzb_url|Starting migration to 49
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 50: add_hash_to_metadata_files migrating ***
+17-6-1 00:29:33.3|Info|add_hash_to_metadata_files|Starting migration to 50
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 51: download_client_import migrating ***
+17-6-1 00:29:33.3|Info|download_client_import|Starting migration to 51
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 52: add_columns_for_anime migrating ***
+17-6-1 00:29:33.3|Info|add_columns_for_anime|Starting migration to 52
+17-6-1 00:29:33.3|Info|MigrationLogger|*** 53: add_series_sorttitle migrating ***
+17-6-1 00:29:33.3|Info|add_series_sorttitle|Starting migration to 53
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 54: rename_profiles migrating ***
+17-6-1 00:29:33.4|Info|rename_profiles|Starting migration to 54
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 55: drop_old_profile_columns migrating ***
+17-6-1 00:29:33.4|Info|drop_old_profile_columns|Starting migration to 55
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 56: add_mediainfo_to_episodefile migrating ***
+17-6-1 00:29:33.4|Info|add_mediainfo_to_episodefile|Starting migration to 56
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 57: convert_episode_file_path_to_relative migrating ***
+17-6-1 00:29:33.4|Info|convert_episode_file_path_to_relative|Starting migration to 57
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 58: drop_episode_file_path migrating ***
+17-6-1 00:29:33.4|Info|drop_episode_file_path|Starting migration to 58
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 59: add_enable_options_to_indexers migrating ***
+17-6-1 00:29:33.4|Info|add_enable_options_to_indexers|Starting migration to 59
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 60: remove_enable_from_indexers migrating ***
+17-6-1 00:29:33.4|Info|remove_enable_from_indexers|Starting migration to 60
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 61: clear_bad_scene_names migrating ***
+17-6-1 00:29:33.4|Info|clear_bad_scene_names|Starting migration to 61
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 62: convert_quality_models migrating ***
+17-6-1 00:29:33.4|Info|convert_quality_models|Starting migration to 62
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 63: add_remotepathmappings migrating ***
+17-6-1 00:29:33.4|Info|add_remotepathmappings|Starting migration to 63
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 64: remove_method_from_logs migrating ***
+17-6-1 00:29:33.4|Info|remove_method_from_logs|Starting migration to 64
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 65: make_scene_numbering_nullable migrating ***
+17-6-1 00:29:33.4|Info|make_scene_numbering_nullable|Starting migration to 65
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 66: add_tags migrating ***
+17-6-1 00:29:33.4|Info|add_tags|Starting migration to 66
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 67: add_added_to_series migrating ***
+17-6-1 00:29:33.4|Info|add_added_to_series|Starting migration to 67
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 68: add_release_restrictions migrating ***
+17-6-1 00:29:33.4|Info|add_release_restrictions|Starting migration to 68
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 69: quality_proper migrating ***
+17-6-1 00:29:33.4|Info|quality_proper|Starting migration to 69
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 70: delay_profile migrating ***
+17-6-1 00:29:33.4|Info|delay_profile|Starting migration to 70
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 71: unknown_quality_in_profile migrating ***
+17-6-1 00:29:33.4|Info|unknown_quality_in_profile|Starting migration to 71
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 72: history_downloadId migrating ***
+17-6-1 00:29:33.4|Info|history_downloadId|Starting migration to 72
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 73: clear_ratings migrating ***
+17-6-1 00:29:33.4|Info|clear_ratings|Starting migration to 73
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 74: disable_eztv migrating ***
+17-6-1 00:29:33.4|Info|disable_eztv|Starting migration to 74
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 75: force_lib_update migrating ***
+17-6-1 00:29:33.4|Info|force_lib_update|Starting migration to 75
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 76: add_users_table migrating ***
+17-6-1 00:29:33.4|Info|add_users_table|Starting migration to 76
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 77: add_add_options_to_series migrating ***
+17-6-1 00:29:33.4|Info|add_add_options_to_series|Starting migration to 77
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 78: add_commands_table migrating ***
+17-6-1 00:29:33.4|Info|add_commands_table|Starting migration to 78
+17-6-1 00:29:33.4|Info|MigrationLogger|*** 79: dedupe_tags migrating ***
+17-6-1 00:29:33.4|Info|dedupe_tags|Starting migration to 79
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 81: move_dot_prefix_to_transmission_category migrating ***
+17-6-1 00:29:33.5|Info|move_dot_prefix_to_transmission_category|Starting migration to 81
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 82: add_fanzub_settings migrating ***
+17-6-1 00:29:33.5|Info|add_fanzub_settings|Starting migration to 82
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 83: additonal_blacklist_columns migrating ***
+17-6-1 00:29:33.5|Info|additonal_blacklist_columns|Starting migration to 83
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 84: update_quality_minmax_size migrating ***
+17-6-1 00:29:33.5|Info|update_quality_minmax_size|Starting migration to 84
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 85: expand_transmission_urlbase migrating ***
+17-6-1 00:29:33.5|Info|expand_transmission_urlbase|Starting migration to 85
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 86: pushbullet_device_ids migrating ***
+17-6-1 00:29:33.5|Info|pushbullet_device_ids|Starting migration to 86
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 87: remove_eztv migrating ***
+17-6-1 00:29:33.5|Info|remove_eztv|Starting migration to 87
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 88: pushbullet_devices_channels_list migrating ***
+17-6-1 00:29:33.5|Info|pushbullet_devices_channels_list|Starting migration to 88
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 89: add_on_rename_to_notifcations migrating ***
+17-6-1 00:29:33.5|Info|add_on_rename_to_notifcations|Starting migration to 89
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 90: update_kickass_url migrating ***
+17-6-1 00:29:33.5|Info|update_kickass_url|Starting migration to 90
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 91: added_indexerstatus migrating ***
+17-6-1 00:29:33.5|Info|added_indexerstatus|Starting migration to 91
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 92: add_unverifiedscenenumbering migrating ***
+17-6-1 00:29:33.5|Info|add_unverifiedscenenumbering|Starting migration to 92
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 93: naming_config_replace_illegal_characters migrating ***
+17-6-1 00:29:33.5|Info|naming_config_replace_illegal_characters|Starting migration to 93
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 94: add_tvmazeid migrating ***
+17-6-1 00:29:33.5|Info|add_tvmazeid|Starting migration to 94
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 95: add_additional_episodes_index migrating ***
+17-6-1 00:29:33.5|Info|add_additional_episodes_index|Starting migration to 95
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 96: disable_kickass migrating ***
+17-6-1 00:29:33.5|Info|disable_kickass|Starting migration to 96
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 98: remove_titans_of_tv migrating ***
+17-6-1 00:29:33.5|Info|remove_titans_of_tv|Starting migration to 98
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 99: extra_and_subtitle_files migrating ***
+17-6-1 00:29:33.5|Info|extra_and_subtitle_files|Starting migration to 99
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 100: add_scene_season_number migrating ***
+17-6-1 00:29:33.5|Info|add_scene_season_number|Starting migration to 100
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 101: add_ultrahd_quality_in_profiles migrating ***
+17-6-1 00:29:33.5|Info|add_ultrahd_quality_in_profiles|Starting migration to 101
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 103: fix_metadata_file_extensions migrating ***
+17-6-1 00:29:33.5|Info|fix_metadata_file_extensions|Starting migration to 103
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 104: add_moviefiles_table migrating ***
+17-6-1 00:29:33.5|Info|add_moviefiles_table|Starting migration to 104
+17-6-1 00:29:33.5|Info|MigrationLogger|*** 105: fix_history_movieId migrating ***
+17-6-1 00:29:33.5|Info|fix_history_movieId|Starting migration to 105
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 106: add_tmdb_stuff migrating ***
+17-6-1 00:29:33.6|Info|add_tmdb_stuff|Starting migration to 106
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 107: fix_movie_files migrating ***
+17-6-1 00:29:33.6|Info|fix_movie_files|Starting migration to 107
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 108: update_schedule_intervale migrating ***
+17-6-1 00:29:33.6|Info|update_schedule_intervale|Starting migration to 108
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 109: add_movie_formats_to_naming_config migrating ***
+17-6-1 00:29:33.6|Info|add_movie_formats_to_naming_config|Starting migration to 109
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 110: add_phyiscal_release migrating ***
+17-6-1 00:29:33.6|Info|add_phyiscal_release|Starting migration to 110
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 111: remove_bitmetv migrating ***
+17-6-1 00:29:33.6|Info|remove_bitmetv|Starting migration to 111
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 112: remove_torrentleech migrating ***
+17-6-1 00:29:33.6|Info|remove_torrentleech|Starting migration to 112
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 113: remove_broadcasthenet migrating ***
+17-6-1 00:29:33.6|Info|remove_broadcasthenet|Starting migration to 113
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 114: remove_fanzub migrating ***
+17-6-1 00:29:33.6|Info|remove_fanzub|Starting migration to 114
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 115: update_movie_sorttitle migrating ***
+17-6-1 00:29:33.6|Info|update_movie_sorttitle|Starting migration to 115
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 116: update_movie_sorttitle_again migrating ***
+17-6-1 00:29:33.6|Info|update_movie_sorttitle_again|Starting migration to 116
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 117: update_movie_file migrating ***
+17-6-1 00:29:33.6|Info|update_movie_file|Starting migration to 117
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 118: update_movie_slug migrating ***
+17-6-1 00:29:33.6|Info|update_movie_slug|Starting migration to 118
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 119: add_youtube_trailer_id migrating ***
+17-6-1 00:29:33.6|Info|add_youtube_trailer_id|Starting migration to 119
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 120: add_studio migrating ***
+17-6-1 00:29:33.6|Info|add_studio|Starting migration to 120
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 121: update_filedate_config migrating ***
+17-6-1 00:29:33.6|Info|update_filedate_config|Starting migration to 121
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 122: add_movieid_to_blacklist migrating ***
+17-6-1 00:29:33.6|Info|add_movieid_to_blacklist|Starting migration to 122
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 123: create_netimport_table migrating ***
+17-6-1 00:29:33.6|Info|create_netimport_table|Starting migration to 123
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 124: add_preferred_tags_to_profile migrating ***
+17-6-1 00:29:33.6|Info|add_preferred_tags_to_profile|Starting migration to 124
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 125: fix_imdb_unique migrating ***
+17-6-1 00:29:33.6|Info|fix_imdb_unique|Starting migration to 125
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 126: update_qualities_and_profiles migrating ***
+17-6-1 00:29:33.6|Info|update_qualities_and_profiles|Starting migration to 126
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 127: remove_wombles_kickass migrating ***
+17-6-1 00:29:33.6|Info|remove_wombles_kickass|Starting migration to 127
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 128: remove_kickass migrating ***
+17-6-1 00:29:33.6|Info|remove_kickass|Starting migration to 128
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 129: add_parsed_movie_info_to_pending_release migrating ***
+17-6-1 00:29:33.6|Info|add_parsed_movie_info_to_pending_release|Starting migration to 129
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 131: make_parsed_episode_info_nullable migrating ***
+17-6-1 00:29:33.6|Info|make_parsed_episode_info_nullable|Starting migration to 131
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 132: rename_torrent_downloadstation migrating ***
+17-6-1 00:29:33.6|Info|rename_torrent_downloadstation|Starting migration to 132
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 133: add_minimumavailability migrating ***
+17-6-1 00:29:33.6|Info|add_minimumavailability|Starting migration to 133
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 134: add_remux_qualities_for_the_wankers migrating ***
+17-6-1 00:29:33.6|Info|add_remux_qualities_for_the_wankers|Starting migration to 134
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 135: add_haspredbentry_to_movies migrating ***
+17-6-1 00:29:33.6|Info|add_haspredbentry_to_movies|Starting migration to 135
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 136: add_pathstate_to_movies migrating ***
+17-6-1 00:29:33.6|Info|add_pathstate_to_movies|Starting migration to 136
+17-6-1 00:29:33.6|Info|MigrationLogger|*** 137: add_import_exclusions_table migrating ***
+17-6-1 00:29:33.6|Info|add_import_exclusions_table|Starting migration to 137
+17-6-1 00:29:33.7|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-1 00:29:33.7|Info|MigrationLogger|*** VersionMigration migrating ***
+17-6-1 00:29:33.7|Info|MigrationLogger|*** VersionUniqueMigration migrating ***
+17-6-1 00:29:33.7|Info|MigrationLogger|*** VersionDescriptionMigration migrating ***
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 1: InitialSetup migrating ***
+17-6-1 00:29:33.7|Info|InitialSetup|Starting migration to 1
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 2: remove_tvrage_imdb_unique_constraint migrating ***
+17-6-1 00:29:33.7|Info|remove_tvrage_imdb_unique_constraint|Starting migration to 2
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 3: remove_renamed_scene_mapping_columns migrating ***
+17-6-1 00:29:33.7|Info|remove_renamed_scene_mapping_columns|Starting migration to 3
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 4: updated_history migrating ***
+17-6-1 00:29:33.7|Info|updated_history|Starting migration to 4
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 5: added_eventtype_to_history migrating ***
+17-6-1 00:29:33.7|Info|added_eventtype_to_history|Starting migration to 5
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 6: add_index_to_log_time migrating ***
+17-6-1 00:29:33.7|Info|add_index_to_log_time|Starting migration to 6
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 7: add_renameEpisodes_to_naming migrating ***
+17-6-1 00:29:33.7|Info|add_renameEpisodes_to_naming|Starting migration to 7
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 8: remove_backlog migrating ***
+17-6-1 00:29:33.7|Info|remove_backlog|Starting migration to 8
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 9: fix_rename_episodes migrating ***
+17-6-1 00:29:33.7|Info|fix_rename_episodes|Starting migration to 9
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 10: add_monitored migrating ***
+17-6-1 00:29:33.7|Info|add_monitored|Starting migration to 10
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 11: remove_ignored migrating ***
+17-6-1 00:29:33.7|Info|remove_ignored|Starting migration to 11
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 12: remove_custom_start_date migrating ***
+17-6-1 00:29:33.7|Info|remove_custom_start_date|Starting migration to 12
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 13: add_air_date_utc migrating ***
+17-6-1 00:29:33.7|Info|add_air_date_utc|Starting migration to 13
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 14: drop_air_date migrating ***
+17-6-1 00:29:33.7|Info|drop_air_date|Starting migration to 14
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 15: add_air_date_as_string migrating ***
+17-6-1 00:29:33.7|Info|add_air_date_as_string|Starting migration to 15
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 16: updated_imported_history_item migrating ***
+17-6-1 00:29:33.7|Info|updated_imported_history_item|Starting migration to 16
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 17: reset_scene_names migrating ***
+17-6-1 00:29:33.7|Info|reset_scene_names|Starting migration to 17
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 18: remove_duplicates migrating ***
+17-6-1 00:29:33.7|Info|remove_duplicates|Starting migration to 18
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 19: restore_unique_constraints migrating ***
+17-6-1 00:29:33.7|Info|restore_unique_constraints|Starting migration to 19
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 20: add_year_and_seasons_to_series migrating ***
+17-6-1 00:29:33.7|Info|add_year_and_seasons_to_series|Starting migration to 20
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 21: drop_seasons_table migrating ***
+17-6-1 00:29:33.7|Info|drop_seasons_table|Starting migration to 21
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 22: move_indexer_to_generic_provider migrating ***
+17-6-1 00:29:33.7|Info|move_indexer_to_generic_provider|Starting migration to 22
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 23: add_config_contract_to_indexers migrating ***
+17-6-1 00:29:33.7|Info|add_config_contract_to_indexers|Starting migration to 23
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 24: drop_tvdb_episodeid migrating ***
+17-6-1 00:29:33.7|Info|drop_tvdb_episodeid|Starting migration to 24
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 25: move_notification_to_generic_provider migrating ***
+17-6-1 00:29:33.7|Info|move_notification_to_generic_provider|Starting migration to 25
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 26: add_config_contract_to_notifications migrating ***
+17-6-1 00:29:33.7|Info|add_config_contract_to_notifications|Starting migration to 26
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 27: fix_omgwtfnzbs migrating ***
+17-6-1 00:29:33.7|Info|fix_omgwtfnzbs|Starting migration to 27
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 28: add_blacklist_table migrating ***
+17-6-1 00:29:33.7|Info|add_blacklist_table|Starting migration to 28
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 29: add_formats_to_naming_config migrating ***
+17-6-1 00:29:33.7|Info|add_formats_to_naming_config|Starting migration to 29
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 30: add_season_folder_format_to_naming_config migrating ***
+17-6-1 00:29:33.7|Info|add_season_folder_format_to_naming_config|Starting migration to 30
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 31: delete_old_naming_config_columns migrating ***
+17-6-1 00:29:33.7|Info|delete_old_naming_config_columns|Starting migration to 31
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 32: set_default_release_group migrating ***
+17-6-1 00:29:33.7|Info|set_default_release_group|Starting migration to 32
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 33: add_api_key_to_pushover migrating ***
+17-6-1 00:29:33.7|Info|add_api_key_to_pushover|Starting migration to 33
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 34: remove_series_contraints migrating ***
+17-6-1 00:29:33.7|Info|remove_series_contraints|Starting migration to 34
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 35: add_series_folder_format_to_naming_config migrating ***
+17-6-1 00:29:33.7|Info|add_series_folder_format_to_naming_config|Starting migration to 35
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 36: update_with_quality_converters migrating ***
+17-6-1 00:29:33.7|Info|update_with_quality_converters|Starting migration to 36
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 37: add_configurable_qualities migrating ***
+17-6-1 00:29:33.7|Info|add_configurable_qualities|Starting migration to 37
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 38: add_on_upgrade_to_notifications migrating ***
+17-6-1 00:29:33.7|Info|add_on_upgrade_to_notifications|Starting migration to 38
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 39: add_metadata_tables migrating ***
+17-6-1 00:29:33.7|Info|add_metadata_tables|Starting migration to 39
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 40: add_metadata_to_episodes_and_series migrating ***
+17-6-1 00:29:33.7|Info|add_metadata_to_episodes_and_series|Starting migration to 40
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 41: fix_xbmc_season_images_metadata migrating ***
+17-6-1 00:29:33.7|Info|fix_xbmc_season_images_metadata|Starting migration to 41
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 42: add_download_clients_table migrating ***
+17-6-1 00:29:33.7|Info|add_download_clients_table|Starting migration to 42
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 43: convert_config_to_download_clients migrating ***
+17-6-1 00:29:33.7|Info|convert_config_to_download_clients|Starting migration to 43
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 44: fix_xbmc_episode_metadata migrating ***
+17-6-1 00:29:33.7|Info|fix_xbmc_episode_metadata|Starting migration to 44
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 45: add_indexes migrating ***
+17-6-1 00:29:33.7|Info|add_indexes|Starting migration to 45
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 46: fix_nzb_su_url migrating ***
+17-6-1 00:29:33.7|Info|fix_nzb_su_url|Starting migration to 46
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 47: add_temporary_blacklist_columns migrating ***
+17-6-1 00:29:33.7|Info|add_temporary_blacklist_columns|Starting migration to 47
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 48: add_title_to_scenemappings migrating ***
+17-6-1 00:29:33.7|Info|add_title_to_scenemappings|Starting migration to 48
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 49: fix_dognzb_url migrating ***
+17-6-1 00:29:33.7|Info|fix_dognzb_url|Starting migration to 49
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 50: add_hash_to_metadata_files migrating ***
+17-6-1 00:29:33.7|Info|add_hash_to_metadata_files|Starting migration to 50
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 51: download_client_import migrating ***
+17-6-1 00:29:33.7|Info|download_client_import|Starting migration to 51
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 52: add_columns_for_anime migrating ***
+17-6-1 00:29:33.7|Info|add_columns_for_anime|Starting migration to 52
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 53: add_series_sorttitle migrating ***
+17-6-1 00:29:33.7|Info|add_series_sorttitle|Starting migration to 53
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 54: rename_profiles migrating ***
+17-6-1 00:29:33.7|Info|rename_profiles|Starting migration to 54
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 55: drop_old_profile_columns migrating ***
+17-6-1 00:29:33.7|Info|drop_old_profile_columns|Starting migration to 55
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 56: add_mediainfo_to_episodefile migrating ***
+17-6-1 00:29:33.7|Info|add_mediainfo_to_episodefile|Starting migration to 56
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 57: convert_episode_file_path_to_relative migrating ***
+17-6-1 00:29:33.7|Info|convert_episode_file_path_to_relative|Starting migration to 57
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 58: drop_episode_file_path migrating ***
+17-6-1 00:29:33.7|Info|drop_episode_file_path|Starting migration to 58
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 59: add_enable_options_to_indexers migrating ***
+17-6-1 00:29:33.7|Info|add_enable_options_to_indexers|Starting migration to 59
+17-6-1 00:29:33.7|Info|MigrationLogger|*** 60: remove_enable_from_indexers migrating ***
+17-6-1 00:29:33.7|Info|remove_enable_from_indexers|Starting migration to 60
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 61: clear_bad_scene_names migrating ***
+17-6-1 00:29:33.8|Info|clear_bad_scene_names|Starting migration to 61
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 62: convert_quality_models migrating ***
+17-6-1 00:29:33.8|Info|convert_quality_models|Starting migration to 62
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 63: add_remotepathmappings migrating ***
+17-6-1 00:29:33.8|Info|add_remotepathmappings|Starting migration to 63
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 64: remove_method_from_logs migrating ***
+17-6-1 00:29:33.8|Info|remove_method_from_logs|Starting migration to 64
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 65: make_scene_numbering_nullable migrating ***
+17-6-1 00:29:33.8|Info|make_scene_numbering_nullable|Starting migration to 65
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 66: add_tags migrating ***
+17-6-1 00:29:33.8|Info|add_tags|Starting migration to 66
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 67: add_added_to_series migrating ***
+17-6-1 00:29:33.8|Info|add_added_to_series|Starting migration to 67
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 68: add_release_restrictions migrating ***
+17-6-1 00:29:33.8|Info|add_release_restrictions|Starting migration to 68
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 69: quality_proper migrating ***
+17-6-1 00:29:33.8|Info|quality_proper|Starting migration to 69
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 70: delay_profile migrating ***
+17-6-1 00:29:33.8|Info|delay_profile|Starting migration to 70
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 71: unknown_quality_in_profile migrating ***
+17-6-1 00:29:33.8|Info|unknown_quality_in_profile|Starting migration to 71
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 72: history_downloadId migrating ***
+17-6-1 00:29:33.8|Info|history_downloadId|Starting migration to 72
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 73: clear_ratings migrating ***
+17-6-1 00:29:33.8|Info|clear_ratings|Starting migration to 73
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 74: disable_eztv migrating ***
+17-6-1 00:29:33.8|Info|disable_eztv|Starting migration to 74
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 75: force_lib_update migrating ***
+17-6-1 00:29:33.8|Info|force_lib_update|Starting migration to 75
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 76: add_users_table migrating ***
+17-6-1 00:29:33.8|Info|add_users_table|Starting migration to 76
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 77: add_add_options_to_series migrating ***
+17-6-1 00:29:33.8|Info|add_add_options_to_series|Starting migration to 77
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 78: add_commands_table migrating ***
+17-6-1 00:29:33.8|Info|add_commands_table|Starting migration to 78
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 79: dedupe_tags migrating ***
+17-6-1 00:29:33.8|Info|dedupe_tags|Starting migration to 79
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 81: move_dot_prefix_to_transmission_category migrating ***
+17-6-1 00:29:33.8|Info|move_dot_prefix_to_transmission_category|Starting migration to 81
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 82: add_fanzub_settings migrating ***
+17-6-1 00:29:33.8|Info|add_fanzub_settings|Starting migration to 82
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 83: additonal_blacklist_columns migrating ***
+17-6-1 00:29:33.8|Info|additonal_blacklist_columns|Starting migration to 83
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 84: update_quality_minmax_size migrating ***
+17-6-1 00:29:33.8|Info|update_quality_minmax_size|Starting migration to 84
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 85: expand_transmission_urlbase migrating ***
+17-6-1 00:29:33.8|Info|expand_transmission_urlbase|Starting migration to 85
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 86: pushbullet_device_ids migrating ***
+17-6-1 00:29:33.8|Info|pushbullet_device_ids|Starting migration to 86
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 87: remove_eztv migrating ***
+17-6-1 00:29:33.8|Info|remove_eztv|Starting migration to 87
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 88: pushbullet_devices_channels_list migrating ***
+17-6-1 00:29:33.8|Info|pushbullet_devices_channels_list|Starting migration to 88
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 89: add_on_rename_to_notifcations migrating ***
+17-6-1 00:29:33.8|Info|add_on_rename_to_notifcations|Starting migration to 89
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 90: update_kickass_url migrating ***
+17-6-1 00:29:33.8|Info|update_kickass_url|Starting migration to 90
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 91: added_indexerstatus migrating ***
+17-6-1 00:29:33.8|Info|added_indexerstatus|Starting migration to 91
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 92: add_unverifiedscenenumbering migrating ***
+17-6-1 00:29:33.8|Info|add_unverifiedscenenumbering|Starting migration to 92
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 93: naming_config_replace_illegal_characters migrating ***
+17-6-1 00:29:33.8|Info|naming_config_replace_illegal_characters|Starting migration to 93
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 94: add_tvmazeid migrating ***
+17-6-1 00:29:33.8|Info|add_tvmazeid|Starting migration to 94
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 95: add_additional_episodes_index migrating ***
+17-6-1 00:29:33.8|Info|add_additional_episodes_index|Starting migration to 95
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 96: disable_kickass migrating ***
+17-6-1 00:29:33.8|Info|disable_kickass|Starting migration to 96
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 98: remove_titans_of_tv migrating ***
+17-6-1 00:29:33.8|Info|remove_titans_of_tv|Starting migration to 98
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 99: extra_and_subtitle_files migrating ***
+17-6-1 00:29:33.8|Info|extra_and_subtitle_files|Starting migration to 99
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 100: add_scene_season_number migrating ***
+17-6-1 00:29:33.8|Info|add_scene_season_number|Starting migration to 100
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 101: add_ultrahd_quality_in_profiles migrating ***
+17-6-1 00:29:33.8|Info|add_ultrahd_quality_in_profiles|Starting migration to 101
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 103: fix_metadata_file_extensions migrating ***
+17-6-1 00:29:33.8|Info|fix_metadata_file_extensions|Starting migration to 103
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 104: add_moviefiles_table migrating ***
+17-6-1 00:29:33.8|Info|add_moviefiles_table|Starting migration to 104
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 105: fix_history_movieId migrating ***
+17-6-1 00:29:33.8|Info|fix_history_movieId|Starting migration to 105
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 106: add_tmdb_stuff migrating ***
+17-6-1 00:29:33.8|Info|add_tmdb_stuff|Starting migration to 106
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 107: fix_movie_files migrating ***
+17-6-1 00:29:33.8|Info|fix_movie_files|Starting migration to 107
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 108: update_schedule_intervale migrating ***
+17-6-1 00:29:33.8|Info|update_schedule_intervale|Starting migration to 108
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 109: add_movie_formats_to_naming_config migrating ***
+17-6-1 00:29:33.8|Info|add_movie_formats_to_naming_config|Starting migration to 109
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 110: add_phyiscal_release migrating ***
+17-6-1 00:29:33.8|Info|add_phyiscal_release|Starting migration to 110
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 111: remove_bitmetv migrating ***
+17-6-1 00:29:33.8|Info|remove_bitmetv|Starting migration to 111
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 112: remove_torrentleech migrating ***
+17-6-1 00:29:33.8|Info|remove_torrentleech|Starting migration to 112
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 113: remove_broadcasthenet migrating ***
+17-6-1 00:29:33.8|Info|remove_broadcasthenet|Starting migration to 113
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 114: remove_fanzub migrating ***
+17-6-1 00:29:33.8|Info|remove_fanzub|Starting migration to 114
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 115: update_movie_sorttitle migrating ***
+17-6-1 00:29:33.8|Info|update_movie_sorttitle|Starting migration to 115
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 116: update_movie_sorttitle_again migrating ***
+17-6-1 00:29:33.8|Info|update_movie_sorttitle_again|Starting migration to 116
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 117: update_movie_file migrating ***
+17-6-1 00:29:33.8|Info|update_movie_file|Starting migration to 117
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 118: update_movie_slug migrating ***
+17-6-1 00:29:33.8|Info|update_movie_slug|Starting migration to 118
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 119: add_youtube_trailer_id migrating ***
+17-6-1 00:29:33.8|Info|add_youtube_trailer_id|Starting migration to 119
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 120: add_studio migrating ***
+17-6-1 00:29:33.8|Info|add_studio|Starting migration to 120
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 121: update_filedate_config migrating ***
+17-6-1 00:29:33.8|Info|update_filedate_config|Starting migration to 121
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 122: add_movieid_to_blacklist migrating ***
+17-6-1 00:29:33.8|Info|add_movieid_to_blacklist|Starting migration to 122
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 123: create_netimport_table migrating ***
+17-6-1 00:29:33.8|Info|create_netimport_table|Starting migration to 123
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 124: add_preferred_tags_to_profile migrating ***
+17-6-1 00:29:33.8|Info|add_preferred_tags_to_profile|Starting migration to 124
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 125: fix_imdb_unique migrating ***
+17-6-1 00:29:33.8|Info|fix_imdb_unique|Starting migration to 125
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 126: update_qualities_and_profiles migrating ***
+17-6-1 00:29:33.8|Info|update_qualities_and_profiles|Starting migration to 126
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 127: remove_wombles_kickass migrating ***
+17-6-1 00:29:33.8|Info|remove_wombles_kickass|Starting migration to 127
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 128: remove_kickass migrating ***
+17-6-1 00:29:33.8|Info|remove_kickass|Starting migration to 128
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 129: add_parsed_movie_info_to_pending_release migrating ***
+17-6-1 00:29:33.8|Info|add_parsed_movie_info_to_pending_release|Starting migration to 129
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 131: make_parsed_episode_info_nullable migrating ***
+17-6-1 00:29:33.8|Info|make_parsed_episode_info_nullable|Starting migration to 131
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 132: rename_torrent_downloadstation migrating ***
+17-6-1 00:29:33.8|Info|rename_torrent_downloadstation|Starting migration to 132
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 133: add_minimumavailability migrating ***
+17-6-1 00:29:33.8|Info|add_minimumavailability|Starting migration to 133
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 134: add_remux_qualities_for_the_wankers migrating ***
+17-6-1 00:29:33.8|Info|add_remux_qualities_for_the_wankers|Starting migration to 134
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 135: add_haspredbentry_to_movies migrating ***
+17-6-1 00:29:33.8|Info|add_haspredbentry_to_movies|Starting migration to 135
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 136: add_pathstate_to_movies migrating ***
+17-6-1 00:29:33.8|Info|add_pathstate_to_movies|Starting migration to 136
+17-6-1 00:29:33.8|Info|MigrationLogger|*** 137: add_import_exclusions_table migrating ***
+17-6-1 00:29:33.8|Info|add_import_exclusions_table|Starting migration to 137
+17-6-1 00:29:33.9|Info|Router|Application mode: Interactive
+17-6-1 00:29:33.9|Info|OwinHostController|Listening on the following URLs:
+17-6-1 00:29:33.9|Info|OwinHostController|  http://*:7878/
+17-6-1 00:29:34.2|Info|NancyBootstrapper|Starting NzbDrone API
+17-6-1 00:29:36.6|Info|ProfileService|Setting up default quality profiles
+17-6-1 00:34:15.3|Info|Bootstrap|Starting Radarr - /opt/radarr/Radarr.exe - Version 0.2.0.696
+17-6-1 00:34:16.4|Info|AppFolderInfo|Data directory is being overridden to [/config]
+17-6-1 00:34:20.1|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-1 00:34:20.3|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-1 00:34:20.4|Info|Router|Application mode: Interactive
+17-6-1 00:34:20.4|Info|OwinHostController|Listening on the following URLs:
+17-6-1 00:34:20.4|Info|OwinHostController|  http://*:7878/
+17-6-1 00:34:20.8|Info|NancyBootstrapper|Starting NzbDrone API
+17-6-1 00:39:51.8|Info|Bootstrap|Starting Radarr - /opt/radarr/Radarr.exe - Version 0.2.0.696
+17-6-1 00:39:52.7|Info|AppFolderInfo|Data directory is being overridden to [/config]
+17-6-1 00:39:55.2|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-1 00:39:55.4|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-1 00:39:55.5|Info|Router|Application mode: Interactive
+17-6-1 00:39:55.5|Info|OwinHostController|Listening on the following URLs:
+17-6-1 00:39:55.5|Info|OwinHostController|  http://*:7878/
+17-6-1 00:39:55.7|Info|NancyBootstrapper|Starting NzbDrone API
+17-6-1 19:44:49.0|Info|Bootstrap|Starting Radarr - /opt/radarr/Radarr.exe - Version 0.2.0.696
+17-6-1 19:44:49.8|Info|AppFolderInfo|Data directory is being overridden to [/config]
+17-6-1 19:44:52.5|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-1 19:44:52.7|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-1 19:44:52.9|Info|Router|Application mode: Interactive
+17-6-1 19:44:52.9|Info|OwinHostController|Listening on the following URLs:
+17-6-1 19:44:52.9|Info|OwinHostController|  http://*:7878/
+17-6-1 19:44:53.1|Info|NancyBootstrapper|Starting NzbDrone API
+17-6-1 19:45:26.7|Info|PreDBService|Starting PreDB Sync
+17-6-1 19:45:26.9|Info|RssSyncService|Starting RSS Sync
+17-6-1 19:45:26.9|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+17-6-1 19:45:26.9|Info|DownloadDecisionMaker|No results found
+17-6-1 19:45:26.9|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+17-6-1 19:45:27.0|Info|NetImportSearchService|No lists are enabled for auto-import.
+17-6-1 19:51:11.0|Info|Bootstrap|Starting Radarr - /opt/radarr/Radarr.exe - Version 0.2.0.696
+17-6-1 19:51:11.9|Info|AppFolderInfo|Data directory is being overridden to [/config]
+17-6-1 19:51:15.0|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-1 19:51:15.2|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-1 19:51:15.4|Info|Router|Application mode: Interactive
+17-6-1 19:51:15.4|Info|OwinHostController|Listening on the following URLs:
+17-6-1 19:51:15.4|Info|OwinHostController|  http://*:7878/
+17-6-1 19:51:15.8|Info|NancyBootstrapper|Starting NzbDrone API
+17-6-1 20:05:22.6|Info|Bootstrap|Starting Radarr - /opt/radarr/Radarr.exe - Version 0.2.0.696
+17-6-1 20:05:23.6|Info|AppFolderInfo|Data directory is being overridden to [/config]
+17-6-1 20:05:26.4|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-1 20:05:26.6|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-1 20:05:26.8|Info|Router|Application mode: Interactive
+17-6-1 20:05:26.8|Info|OwinHostController|Listening on the following URLs:
+17-6-1 20:05:26.8|Info|OwinHostController|  http://*:7878/
+17-6-1 20:05:27.1|Info|NancyBootstrapper|Starting NzbDrone API
+17-6-1 20:06:51.2|Info|Bootstrap|Starting Radarr - /opt/radarr/Radarr.exe - Version 0.2.0.696
+17-6-1 20:06:52.0|Info|AppFolderInfo|Data directory is being overridden to [/config]
+17-6-1 20:06:54.7|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-1 20:06:54.9|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-1 20:06:55.1|Info|Router|Application mode: Interactive
+17-6-1 20:06:55.1|Info|OwinHostController|Listening on the following URLs:
+17-6-1 20:06:55.1|Info|OwinHostController|  http://*:7878/
+17-6-1 20:06:55.5|Info|NancyBootstrapper|Starting NzbDrone API
+17-6-1 22:18:29.3|Info|PreDBService|Starting PreDB Sync
+17-6-1 22:18:29.4|Info|RssSyncService|Starting RSS Sync
+17-6-1 22:18:29.4|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+17-6-1 22:18:29.4|Info|NetImportSearchService|No lists are enabled for auto-import.
+17-6-1 22:18:29.4|Info|DownloadDecisionMaker|No results found
+17-6-1 22:18:29.4|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+17-6-2 00:06:39.6|Info|PreDBService|Starting PreDB Sync
+17-6-2 00:06:39.7|Info|RssSyncService|Starting RSS Sync
+17-6-2 00:06:39.8|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+17-6-2 00:06:39.8|Info|DownloadDecisionMaker|No results found
+17-6-2 00:06:39.8|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+17-6-2 00:06:39.8|Info|NetImportSearchService|No lists are enabled for auto-import.
+17-6-2 03:42:12.5|Info|PreDBService|Starting PreDB Sync
+17-6-2 03:42:12.8|Info|HousekeepingService|Running housecleaning tasks
+17-6-2 03:42:12.9|Info|Database|Vacuuming Log database
+17-6-2 03:42:12.9|Info|Database|Log database compressed
+17-6-2 03:42:12.9|Info|Database|Vacuuming Main database
+17-6-2 03:42:12.9|Info|Database|Main database compressed
+17-6-2 03:42:12.9|Info|RssSyncService|Starting RSS Sync
+17-6-2 03:42:12.9|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+17-6-2 03:42:12.9|Info|DownloadDecisionMaker|No results found
+17-6-2 03:42:12.9|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+17-6-2 03:42:12.9|Info|NetImportSearchService|No lists are enabled for auto-import.
+17-6-2 05:31:00.2|Info|PreDBService|Starting PreDB Sync
+17-6-2 05:31:00.3|Info|RssSyncService|Starting RSS Sync
+17-6-2 05:31:00.3|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+17-6-2 05:31:00.3|Info|DownloadDecisionMaker|No results found
+17-6-2 05:31:00.3|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+17-6-2 05:31:00.3|Info|NetImportSearchService|No lists are enabled for auto-import.
+17-6-2 07:48:57.3|Info|PreDBService|Starting PreDB Sync
+17-6-2 07:48:57.5|Info|RssSyncService|Starting RSS Sync
+17-6-2 07:48:57.5|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+17-6-2 07:48:57.5|Info|DownloadDecisionMaker|No results found
+17-6-2 07:48:57.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+17-6-2 07:48:57.6|Info|NetImportSearchService|No lists are enabled for auto-import.
+17-6-2 09:37:08.5|Info|PreDBService|Starting PreDB Sync
+17-6-2 09:37:08.6|Info|RssSyncService|Starting RSS Sync
+17-6-2 09:37:08.7|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+17-6-2 09:37:08.7|Info|DownloadDecisionMaker|No results found
+17-6-2 09:37:08.7|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+17-6-2 09:37:08.7|Info|NetImportSearchService|No lists are enabled for auto-import.
+17-6-2 10:37:58.9|Info|PreDBService|Starting PreDB Sync
+17-6-2 10:37:58.9|Info|RssSyncService|Starting RSS Sync
+17-6-2 10:37:58.9|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+17-6-2 10:37:58.9|Info|DownloadDecisionMaker|No results found
+17-6-2 10:37:58.9|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+17-6-2 10:37:58.9|Info|NetImportSearchService|No lists are enabled for auto-import.
+17-6-2 12:26:08.9|Info|PreDBService|Starting PreDB Sync
+17-6-2 12:26:08.9|Info|RssSyncService|Starting RSS Sync
+17-6-2 12:26:08.9|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+17-6-2 12:26:08.9|Info|DownloadDecisionMaker|No results found
+17-6-2 12:26:08.9|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+17-6-2 12:26:09.0|Info|NetImportSearchService|No lists are enabled for auto-import.
+17-6-2 14:13:51.3|Info|PreDBService|Starting PreDB Sync
+17-6-2 14:13:51.4|Info|RssSyncService|Starting RSS Sync
+17-6-2 14:13:51.4|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+17-6-2 14:13:51.4|Info|DownloadDecisionMaker|No results found
+17-6-2 14:13:51.4|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+17-6-2 14:13:51.5|Info|NetImportSearchService|No lists are enabled for auto-import.
+17-6-2 16:01:49.4|Info|PreDBService|Starting PreDB Sync
+17-6-2 16:01:49.6|Info|RssSyncService|Starting RSS Sync
+17-6-2 16:01:49.6|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+17-6-2 16:01:49.6|Info|DownloadDecisionMaker|No results found
+17-6-2 16:01:49.6|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+17-6-2 16:01:49.7|Info|NetImportSearchService|No lists are enabled for auto-import.
+17-6-2 17:50:00.0|Info|PreDBService|Starting PreDB Sync
+17-6-2 17:50:00.3|Info|RssSyncService|Starting RSS Sync
+17-6-2 17:50:00.3|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+17-6-2 17:50:00.3|Info|DownloadDecisionMaker|No results found
+17-6-2 17:50:00.3|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+17-6-2 17:50:00.4|Info|NetImportSearchService|No lists are enabled for auto-import.
+17-6-2 19:35:51.5|Info|PreDBService|Starting PreDB Sync
+17-6-2 19:35:51.7|Info|RssSyncService|Starting RSS Sync
+17-6-2 19:35:51.7|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+17-6-2 19:35:51.7|Info|DownloadDecisionMaker|No results found
+17-6-2 19:35:51.7|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+17-6-2 19:35:51.8|Info|NetImportSearchService|No lists are enabled for auto-import.
+17-6-2 20:35:55.3|Info|PreDBService|Starting PreDB Sync
+17-6-2 20:35:55.5|Info|RssSyncService|Starting RSS Sync
+17-6-2 20:35:55.5|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+17-6-2 20:35:55.5|Info|DownloadDecisionMaker|No results found
+17-6-2 20:35:55.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+17-6-2 20:35:55.7|Info|NetImportSearchService|No lists are enabled for auto-import.
+17-6-2 21:23:34.9|Info|Bootstrap|Starting Radarr - /opt/radarr/Radarr.exe - Version 0.2.0.696
+17-6-2 21:23:35.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+17-6-2 21:23:38.7|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-2 21:23:38.9|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-2 21:23:39.1|Info|Router|Application mode: Interactive
+17-6-2 21:23:39.1|Info|OwinHostController|Listening on the following URLs:
+17-6-2 21:23:39.1|Info|OwinHostController|  http://*:7878/
+17-6-2 21:23:39.3|Info|NancyBootstrapper|Starting NzbDrone API
+17-6-2 21:34:11.2|Info|Bootstrap|Starting Radarr - /opt/radarr/Radarr.exe - Version 0.2.0.696
+17-6-2 21:34:12.2|Info|AppFolderInfo|Data directory is being overridden to [/config]
+17-6-2 21:34:15.4|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-2 21:34:15.5|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-2 21:34:15.6|Info|Router|Application mode: Interactive
+17-6-2 21:34:15.7|Info|OwinHostController|Listening on the following URLs:
+17-6-2 21:34:15.7|Info|OwinHostController|  http://*:7878/
+17-6-2 21:34:16.0|Info|NancyBootstrapper|Starting NzbDrone API
+17-6-2 21:36:19.8|Info|PreDBService|Starting PreDB Sync
+17-6-2 21:36:19.8|Info|RssSyncService|Starting RSS Sync
+17-6-2 21:36:19.9|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+17-6-2 21:36:19.9|Info|DownloadDecisionMaker|No results found
+17-6-2 21:36:19.9|Info|NetImportSearchService|No lists are enabled for auto-import.
+17-6-2 21:36:19.9|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+17-6-2 21:41:46.4|Info|Bootstrap|Starting Radarr - /opt/radarr/Radarr.exe - Version 0.2.0.696
+17-6-2 21:41:47.1|Info|AppFolderInfo|Data directory is being overridden to [/config]
+17-6-2 21:41:50.3|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-2 21:41:50.5|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-2 21:41:50.7|Info|Router|Application mode: Interactive
+17-6-2 21:41:50.7|Info|OwinHostController|Listening on the following URLs:
+17-6-2 21:41:50.7|Info|OwinHostController|  http://*:7878/
+17-6-2 21:41:51.0|Info|NancyBootstrapper|Starting NzbDrone API
+17-6-2 21:47:46.0|Info|Bootstrap|Starting Radarr - /opt/radarr/Radarr.exe - Version 0.2.0.696
+17-6-2 21:47:46.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+17-6-2 21:47:49.5|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-2 21:47:49.8|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-2 21:47:49.9|Info|Router|Application mode: Interactive
+17-6-2 21:47:49.9|Info|OwinHostController|Listening on the following URLs:
+17-6-2 21:47:49.9|Info|OwinHostController|  http://*:7878/
+17-6-2 21:47:50.3|Info|NancyBootstrapper|Starting NzbDrone API
+17-6-2 22:36:26.0|Info|RssSyncService|Starting RSS Sync
+17-6-2 22:36:26.0|Info|PreDBService|Starting PreDB Sync
+17-6-2 22:36:26.0|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+17-6-2 22:36:26.0|Info|DownloadDecisionMaker|No results found
+17-6-2 22:36:26.0|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+17-6-2 22:36:26.1|Info|NetImportSearchService|No lists are enabled for auto-import.
+17-6-2 22:46:55.4|Info|Bootstrap|Starting Radarr - /opt/radarr/Radarr.exe - Version 0.2.0.696
+17-6-2 22:46:56.1|Info|AppFolderInfo|Data directory is being overridden to [/config]
+17-6-2 22:46:59.3|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-2 22:46:59.6|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-2 22:46:59.7|Info|Router|Application mode: Interactive
+17-6-2 22:46:59.7|Info|OwinHostController|Listening on the following URLs:
+17-6-2 22:46:59.7|Info|OwinHostController|  http://*:7878/
+17-6-2 22:47:00.0|Info|NancyBootstrapper|Starting NzbDrone API
+17-6-2 23:41:03.0|Info|Bootstrap|Starting Radarr - /opt/radarr/Radarr.exe - Version 0.2.0.696
+17-6-2 23:41:03.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+17-6-2 23:41:05.7|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-2 23:41:05.9|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-2 23:41:06.1|Info|Router|Application mode: Interactive
+17-6-2 23:41:06.1|Info|OwinHostController|Listening on the following URLs:
+17-6-2 23:41:06.1|Info|OwinHostController|  http://*:7878/
+17-6-2 23:41:06.3|Info|NancyBootstrapper|Starting NzbDrone API
+17-6-2 23:41:40.4|Info|PreDBService|Starting PreDB Sync
+17-6-2 23:41:40.4|Info|RssSyncService|Starting RSS Sync
+17-6-2 23:41:40.4|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+17-6-2 23:41:40.4|Info|DownloadDecisionMaker|No results found
+17-6-2 23:41:40.4|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+17-6-2 23:41:40.4|Info|NetImportSearchService|No lists are enabled for auto-import.
+17-6-2 23:48:31.0|Info|Bootstrap|Starting Radarr - /opt/radarr/Radarr.exe - Version 0.2.0.696
+17-6-2 23:48:32.1|Info|AppFolderInfo|Data directory is being overridden to [/config]
+17-6-2 23:48:35.1|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-2 23:48:35.3|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-2 23:48:35.5|Info|Router|Application mode: Interactive
+17-6-2 23:48:35.5|Info|OwinHostController|Listening on the following URLs:
+17-6-2 23:48:35.5|Info|OwinHostController|  http://*:7878/
+17-6-2 23:48:35.8|Info|NancyBootstrapper|Starting NzbDrone API
+17-6-2 23:59:16.0|Info|Bootstrap|Starting Radarr - /opt/radarr/Radarr.exe - Version 0.2.0.696
+17-6-2 23:59:17.0|Info|AppFolderInfo|Data directory is being overridden to [/config]
+17-6-2 23:59:20.4|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-2 23:59:20.6|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-2 23:59:20.8|Info|Router|Application mode: Interactive
+17-6-2 23:59:20.8|Info|OwinHostController|Listening on the following URLs:
+17-6-2 23:59:20.8|Info|OwinHostController|  http://*:7878/
+17-6-2 23:59:21.1|Info|NancyBootstrapper|Starting NzbDrone API
+17-6-3 00:01:46.6|Info|Bootstrap|Starting Radarr - /opt/radarr/Radarr.exe - Version 0.2.0.696
+17-6-3 00:01:47.3|Info|AppFolderInfo|Data directory is being overridden to [/config]
+17-6-3 00:01:50.0|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-3 00:01:50.2|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-3 00:01:50.4|Info|Router|Application mode: Interactive
+17-6-3 00:01:50.4|Info|OwinHostController|Listening on the following URLs:
+17-6-3 00:01:50.4|Info|OwinHostController|  http://*:7878/
+17-6-3 00:01:50.8|Info|NancyBootstrapper|Starting NzbDrone API
+17-6-3 00:07:53.2|Info|Bootstrap|Starting Radarr - /opt/radarr/Radarr.exe - Version 0.2.0.696
+17-6-3 00:07:53.7|Info|AppFolderInfo|Data directory is being overridden to [/config]
+17-6-3 00:07:56.5|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-3 00:07:56.7|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-3 00:07:56.8|Info|Router|Application mode: Interactive
+17-6-3 00:07:56.9|Info|OwinHostController|Listening on the following URLs:
+17-6-3 00:07:56.9|Info|OwinHostController|  http://*:7878/
+17-6-3 00:07:57.3|Info|NancyBootstrapper|Starting NzbDrone API
+17-6-3 00:23:44.9|Info|Bootstrap|Starting Radarr - /opt/radarr/Radarr.exe - Version 0.2.0.696
+17-6-3 00:23:45.4|Info|AppFolderInfo|Data directory is being overridden to [/config]
+17-6-3 00:23:47.8|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-3 00:23:48.0|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+17-6-3 00:23:48.1|Info|Router|Application mode: Interactive
+17-6-3 00:23:48.1|Info|OwinHostController|Listening on the following URLs:
+17-6-3 00:23:48.1|Info|OwinHostController|  http://*:7878/
+17-6-3 00:23:48.4|Info|NancyBootstrapper|Starting NzbDrone API
+17-6-3 00:37:23.0|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from NZBGet
+
+[v0.2.0.696] System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'System.Net.Sockets.NetworkStream'.
+  at System.Net.WebConnectionStream.EndWrite (System.IAsyncResult r) [0x00097] in <2b0d86369d72459baed0cee98a8e578a>:0 
+  at System.Net.WebConnectionStream.Write (System.Byte[] buffer, System.Int32 offset, System.Int32 size) [0x00053] in <2b0d86369d72459baed0cee98a8e578a>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000d9] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000cc] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:58 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x0007e] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:63 
+  at NzbDrone.Core.Download.Clients.Nzbget.NzbgetProxy.ProcessRequest[T] (NzbDrone.Core.Download.Clients.Nzbget.NzbgetSettings settings, System.String method, System.Object[] parameters) [0x00047] in C:\projects\radarr-usby1\src\NzbDrone.Core\Download\Clients\Nzbget\NzbgetProxy.cs:232 
+  at NzbDrone.Core.Download.Clients.Nzbget.NzbgetProxy.GetGlobalStatus (NzbDrone.Core.Download.Clients.Nzbget.NzbgetSettings settings) [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Download\Clients\Nzbget\NzbgetProxy.cs:125 
+  at NzbDrone.Core.Download.Clients.Nzbget.Nzbget.GetQueue () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Download\Clients\Nzbget\Nzbget.cs:64 
+  at NzbDrone.Core.Download.Clients.Nzbget.Nzbget.GetItems () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Download\Clients\Nzbget\Nzbget.cs:207 
+  at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads (NzbDrone.Core.Download.IDownloadClient downloadClient) [0x0000c] in C:\projects\radarr-usby1\src\NzbDrone.Core\Download\TrackedDownloads\DownloadMonitoringService.cs:86 
+
