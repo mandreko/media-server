@@ -5,8 +5,9 @@ services:
     image: plexinc/pms-docker
     container_name: plex
     volumes:
-      - /home/mandreko/plex/config:/config
-      - /mnt:/data
+      - ${APPDATA_PATH}/plex/config:/config
+      - ${MOVIES_PATH}:/data/Movies
+      - ${TV_PATH}:/data/TV
       - /tmp:/transcode
     hostname: ubuntu1
     ports:
@@ -16,20 +17,23 @@ services:
       - 32469:32469/tcp
       - 1900:1900/udp
       - 32410:32410/udp
+      - 32412:32412/udp
+      - 32413:32413/udp
+      - 32414:32414/udp
     restart: always
     environment:
-      - PLEX_CLAIM="nope"
+      - PLEX_CLAIM=${PLEX_CLAIM}
       - PUID=${PUID}
       - PGID=${PGID}
       - ALLOWED_NETWORKS="10.0.0.0/8"
-      - ADVERTISE_IP="http://10.0.50.200:32400"
-      - TZ="America/Indianapolis"
+      - ADVERTISE_IP=${ADVERTISE_IP}
+      - TZ=${TZ}
 
   vpn:
     image: dperson/openvpn-client
     container_name: vpn
     volumes:
-      - /home/mandreko/openvpn-client:/vpn
+      - ${APPDATA_PATH}/openvpn-client:/vpn
     devices:
       - /dev/net/tun
     cap_add:
@@ -45,8 +49,8 @@ services:
       - nginxdeluge
     volumes:
       - /homem/mandreko/sonarr:/config
-      - /mnt/TV:/tv
-      - /home/mandreko/downloads:/downloads
+      - ${TV_PATH}:/tv
+      - ${APPDATA_PATH}/downloads:/downloads
     ports:
       - 8989:8989
     links:
@@ -65,16 +69,16 @@ services:
       - deluge
       - nginxdeluge
     volumes:
-      - /home/mandreko/radarr:/config
-      - /home/mandreko/downloads:/downloads
-      - /mnt/Movies:/movies
+      - ${APPDATA_PATH}/radarr:/config
+      - ${APPDATA_PATH}/downloads:/downloads
+      - ${MOVIES_PATH}:/movies
     links:
       - nzbget
       - nginxdeluge
     ports:
       - 7878:7878
     environment:
-      - TZ="America/Indianapolis"
+      - TZ=${TZ}
       - PUID=${PUID}
       - PGID=${PGID}
     restart:
@@ -88,8 +92,8 @@ services:
     network_mode: host
     network_mode: "service:vpn"
     volumes:
-      - /home/mandreko/deluge:/config
-      - /home/mandreko/downloads:/downloads
+      - ${APPDATA_PATH}/deluge:/config
+      - ${APPDATA_PATH}/downloads:/downloads
       - /etc/localtime:/etc/localtime:ro
     restart: always
     environment:
@@ -112,15 +116,12 @@ services:
     image: linuxserver/nzbget
     container_name: nzbget
     volumes:
-      - /home/mandreko/nzbget:/config
-      - /home/mandreko/downloads:/downloads
+      - ${APPDATA_PATH}/nzbget:/config
+      - ${APPDATA_PATH}/downloads:/downloads
     ports:
       - 6789:6789
     restart: always
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
-
-
-
 
