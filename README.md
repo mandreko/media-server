@@ -7,6 +7,7 @@ Docker configuration to create Usenet and Torrent downloading system using Sonar
 - install [Docker](https://www.docker.com/)
 - create a [Plex accout](https://www.plex.tv/)
 - clone this repository
+- Configure OpenVPN-Client with username/password and any other specific settings (See below section)
 - get your Plex claim token at https://www.plex.tv/claim/ and put it in the ".env" file
 - configure other settings in ".env" file to match your setup
 - run docker-compose up -d`
